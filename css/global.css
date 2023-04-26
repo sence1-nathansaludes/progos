@@ -1,0 +1,20 @@
+:root {
+  --color-orange: #DE7A00;
+
+  --color-gray: #E6EAED;
+  --color-light-gray: #F0F3F5;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #006DB5;
+}
