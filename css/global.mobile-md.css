@@ -1,0 +1,65 @@
+@media (min-width: 768px) {
+  /*------------------------------------------
+  COMPOSITION
+  ------------------------------------------*/
+
+  /*------------------------------------------
+  UTILITY
+  ------------------------------------------*/
+
+  /*------------------------------------------
+  BLOCKS
+  ------------------------------------------*/
+  footer .container-1 .group-1 .accordion {
+    position: relative;
+    display: flex;
+    gap: 3px;
+  }
+
+  footer .container-1 .group-1 .accordion .item {
+    flex-grow: 1;
+    padding: 17px 16px;
+  }
+
+  footer .container-1 .group-1 .accordion .item:not(.active):hover {
+    background-color: #ffffffb7;
+    cursor: pointer;
+  }
+
+  footer .container-1 .group-1 .accordion > .item + .item {
+    margin: 0;
+  }
+
+  footer .container-1 .group-1 .accordion .item .title {
+    text-align: center;
+  }
+
+  footer .container-1 .group-1 .accordion .item.active {
+    position: relative;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  footer .container-1 .group-1 .accordion .item.active::after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: var(--color-white);
+
+  }
+
+  footer .container-1 .group-1 .accordion .item.active .content {
+    display: none;
+  }
+
+  footer .container-1 .group-1 .tab-content {
+    display: block;
+  }
+
+  /*------------------------------------------
+  EXCEPTION
+  ------------------------------------------*/
+}
