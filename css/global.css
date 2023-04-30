@@ -4,6 +4,10 @@
   --color-gray: #E6EAED;
   --color-light-gray: #F0F3F5;
 
+  --color-gr-main: linear-gradient(90deg, #0070BA 0%, #00A68D 100%, #00A68D 100%);
+
+  --color-text-link: #006DB5;
+
   --color-white: #FFFFFF;
   --color-black: #000000;
 }
@@ -12,6 +16,8 @@ html {
   font-size: 16px;
   font-family: sans-serif;
   font-weight: 400;
+  line-height: 175%;
+  color: #333333;
 }
 
 a {
@@ -40,6 +46,10 @@ UTILITY
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-15px {
+  margin-inline: 15px;
 }
 
 /* outlines */
@@ -89,21 +99,22 @@ BLOCK
 
 /* header */
 header {
-  padding: 15px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 
 header .logo {
   display: flex;
   align-items: center;
   gap: 16.5px;
+  margin-left: 14px;
 }
 
 header .logo .caption {
   font-size: 9px;
-  line-height: 150%;
+  line-height: 1.75;
 }
 
 header .right {
@@ -133,9 +144,43 @@ header .right .group-2 .cta-button {
   width: 180px;
 }
 
+header .header-menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--color-gr-main);
+  font-size: 9px;
+  border: none;
+  min-width: 54px;
+  aspect-ratio: 1;
+  color: var(--color-white);
+}
+
+header .header-menu-button .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 22px;
+}
+
+header .header-menu-button .icon > span {
+  display: block;
+  height: 2px;
+  background-color: var(--color-white);
+}
+
+header .header-menu-button .label {
+  display: inline-block;
+}
+
 /* main */
 main section {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* footer */
@@ -144,21 +189,62 @@ footer {
 }
 
 footer .container-1 .group-1 {
-  padding-top: 56px;
-  padding-bottom: 64px;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 footer .container-1 .group-1 .top-page-link {
   font-weight: 700;
 }
 
-footer .container-1 .group-1 .tabbed-menu {
+footer .container-1 .group-1 .accordion {
   margin-top: 28px;
-  margin-bottom: 40px;
+}
+
+footer .container-1 .group-1 .accordion > .item + .item {
+  margin-top: 10px;
+}
+
+footer .container-1 .group-1 .accordion .item {
+  padding: 17px 20px 16px;
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+
+footer .container-1 .group-1 .accordion .item .title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text-link);
+}
+
+footer .container-1 .group-1 .accordion .item .content {
+  margin-top: 26px;
+  display: none;
+}
+
+footer .container-1 .group-1 .accordion .item.active .title {
+  color: unset;
+}
+
+footer .container-1 .group-1 .accordion .item.active .content {
+  display: block;
+}
+
+footer .container-1 .group-1 .tab-content {
+  display: none;
+  margin-top: 3px;
+  padding: 37px 40px;
+  background-color: var(--color-white);
 }
 
 footer .container-1 .group-1 .cta-buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
 }
 
 footer .container-1 .group-1 .cta-buttons .button {
