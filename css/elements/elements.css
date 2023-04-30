@@ -2,6 +2,45 @@
 COMPOSITION
 ------------------------------------------*/
 
+
+/*------------------------------------------
+UTILITY
+------------------------------------------*/
+
+/* layouts */
+.w-full {
+  width: 100%;
+}
+
+.max-w-1040px {
+  max-width: 1040px;
+}
+
+/* margins */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* outlines */
+.outline {
+  outline-width: 1px;
+  outline-color: #bbbbbb;
+}
+
+.outline-dashed {
+  outline-style: dashed;
+}
+
+/* backgrounds */
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
 /*------------------------------------------
 BLOCKS
 ------------------------------------------*/
