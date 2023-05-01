@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/global.mobile-md.css">
+  <link rel="stylesheet" href="/css/global.mobile-lg.css">
   <link rel="stylesheet" href="elements.css">
 </head>
 <body>
@@ -55,44 +56,73 @@
   <footer>
     <div class="[ container-1 ][ bg-gray ]">
       <div class="[ group-1 ][ max-w-1040px mx-auto ]">
-        <div class="mx-15px">
-          <a class="top-page-link" href="#" target="_blank">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 9L8 0L0 9H3V16H7V12H9V16H13V9H16Z" fill="#006DB5" />
-            </svg>
-            <span>トップページ</span>
-          </a>
-          <div class="accordion">
-            <div class="item active">
-              <p class="title">サービス</p>
-              <div class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis voluptas eveniet laudantium vitae impedit incidunt mollitia illo. Est, placeat quae fuga reiciendis ex distinctio ipsam mollitia dolor similique deserunt molestiae numquam dolores harum excepturi saepe magni inventore odit soluta aliquam perferendis qui tempora? Sed fugiat repellat repellendus aperiam porro!
+        <a class="top-page-link" href="#" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 9L8 0L0 9H3V16H7V12H9V16H13V9H16Z" fill="#006DB5" />
+          </svg>
+          <span>トップページ</span>
+        </a>
+        <div class="accordion">
+          <div class="item">
+            <p class="title"><span>サービス</span></p>
+            <div class="content">
+              <div id="acc-item-content--service">
+                <div class="group">
+                  <p class="label">アセスメント</p>
+                  <ul>
+                    <li><a href="#">英語スピーキングテスト PROGOS［自動採点版］</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <p class="label">ビジネス英語教育事業</p>
+                  <ul>
+                    <li><a href="#">レアジョブ英会話　スマートメソッド®コース</a></li>
+                    <li><a href="#">レアジョブ英会話　ビジネス英会話コース</a></li>
+                    <li><a href="#">カウンセリング（あんしんパッケージ）</a></li>
+                    <li><a href="#">超短期集中プラン</a></li>
+                    <li><a href="#">学習法／モチベーションアップセミナー</a></li>
+                    <li><a href="#">グループセッション</a></li>
+                  </ul>
+                </div>
+                <div class="group">
+                  <p class="label">グローバルリーダー研修</p>
+                  <ul>
+                    <li><a href="#">グローバルリーダー研修</a></li>
+                    <li><a href="#">グローバルマインドセット</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="item">
-              <p class="title">導入事例</p>
-            </div>
-            <div class="item">
-              <p class="title">料金</p>
-            </div>
-            <div class="item">
-              <p class="title">Q&A</p>
-            </div>
-            <div class="item">
-              <p class="title">ブログ</p>
-            </div>
-            <div class="item">
-              <p class="title">セミナー</p>
-            </div>
-            <div class="item">
-              <p class="title">お役立ち資料</p>
-            </div>
           </div>
-          <div class="tab-content"></div>
-          <div class="cta-buttons">
-            <a class="button cta-button" href="#" target="_blank">オンライン相談</a>
-            <a class="button cta-button" href="#" target="_blank">資料ダウンロード</a>
+          <div class="item">
+            <p class="title"><span>導入事例</span></p>
+            <div class="content">導入事例...</div>
           </div>
+          <div class="item">
+            <p class="title"><span>料金</span></p>
+            <div class="content">料金...</div>
+          </div>
+          <div class="item">
+            <p class="title"><span>Q&A</span></p>
+            <div class="content">Q&A...</div>
+          </div>
+          <div class="item">
+            <p class="title"><span>ブログ</span></p>
+            <div class="content">ブログ...</div>
+          </div>
+          <div class="item">
+            <p class="title"><span>セミナー</span></p>
+            <div class="content">セミナー...</div>
+          </div>
+          <div class="item">
+            <p class="title"><span>お役立ち資料</span></p>
+            <div class="content">お役立ち資料...</div>
+          </div>
+        </div>
+        <div class="tab-content"></div>
+        <div class="cta-buttons">
+          <a class="button cta-button" href="#" target="_blank">オンライン相談</a>
+          <a class="button cta-button" href="#" target="_blank">資料ダウンロード</a>
         </div>
       </div>
       <div class="[ group-2 ]">
@@ -138,11 +168,21 @@
     };
 
     $("footer .container-1 .group-1 .accordion .item").click(function () {
-      const content_html = $(this).find(".content").html() ?? "";
-      $("footer .container-1 .group-1 .tab-content").html(content_html);
+      if ($(this).hasClass("active")) {
+        $("footer .container-1 .group-1 .tab-content")
+          .removeClass("active")
+          .html("");
+        $("footer .container-1 .group-1 .accordion .item.active").toggleClass("active");
+      } else {
+        const content_html = $(this).find(".content").html() ?? "";
+        $("footer .container-1 .group-1 .tab-content")
+          .addClass("active")
+          .html(content_html);
 
-      $("footer .container-1 .group-1 .accordion .item.active").removeClass("active")
-      $(this).toggleClass("active");
+        $("footer .container-1 .group-1 .accordion .item.active").removeClass("active");
+        $(this).toggleClass("active");
+      }
+
     });
   </script>
 </body>
