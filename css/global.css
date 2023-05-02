@@ -25,7 +25,7 @@ html {
   font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  line-height: 175%;
+  line-height: 1.75;
   color: var(--color-text);
 }
 
@@ -360,7 +360,7 @@ footer .container-2 .group-1>img+img {
 footer .container-2 .group-1 p {
   font-weight: 700;
   font-size: 11px;
-  line-height: 150%;
+  line-height: 1.50;
 }
 
 footer .container-3 {
@@ -375,14 +375,14 @@ footer .container-3 {
 
 footer .container-3 p {
   font-size: 24px;
-  line-height: 150%;
+  line-height: 1.50;
   margin-top: 0;
 }
 
 footer .container-3 .copyright {
   font-weight: 400;
   font-size: 12px;
-  line-height: 175%;
+  line-height: 1.75;
   opacity: 0.8;
 }
 
