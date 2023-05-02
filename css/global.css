@@ -1,3 +1,11 @@
+/*
+NOTE:
+As a guide, all syles in this stylesheet targets small devices
+with screen widths below 768 pixels (exclusive).
+
+For styles that apply to device screen widths from
+768 pixels and above is found on: global.mobile-md.css
+----------------------------------------------------------- */
 :root {
   --color-orange: #DE7A00;
 

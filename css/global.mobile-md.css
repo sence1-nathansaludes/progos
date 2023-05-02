@@ -1,3 +1,8 @@
+/*
+NOTE:
+As a guide, all styles within this scope are applied to devices with
+screens as wide as 768 pixels and above.
+----------------------------------------------------------- */
 @media (min-width: 768px) {
   html {
     font-size: 16px;
