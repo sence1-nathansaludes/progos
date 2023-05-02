@@ -51,8 +51,7 @@ a {
 
 /* margins */
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .mx-15px {
@@ -187,8 +186,7 @@ header .header-menu-button .label {
 
 /* main */
 main section {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 /* footer */
@@ -197,10 +195,7 @@ footer {
 }
 
 footer .container-1 .group-1 {
-  padding-top: 30px;
-  padding-bottom: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 30px 15px 80px;
 }
 
 footer .container-1 .group-1 .top-page-link {
@@ -216,9 +211,7 @@ footer .container-1 .group-1 .accordion > .item + .item {
 }
 
 footer .container-1 .group-1 .accordion .item {
-  /* padding: 17px 20px 16px; */
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-inline: 20px;
   background-color: var(--color-white);
   border-radius: 4px;
 }
@@ -328,8 +321,7 @@ footer .container-1 .group-1 .cta-buttons .button {
 
 footer .container-1 .group-2 {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding-block: 2px 28px;
   text-align: center;
 }
 
@@ -354,8 +346,7 @@ footer .container-2 {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 36px;
+  padding-block: 40px 36px;
 }
 
 footer .container-2 .group-1 {
@@ -379,8 +370,7 @@ footer .container-3 {
   justify-content: center;
   background: var(--color-gr-main);
   color: var(--color-white);
-  padding-top: 32px;
-  padding-bottom: 11px;
+  padding-block: 32px 11px;
 }
 
 footer .container-3 p {
