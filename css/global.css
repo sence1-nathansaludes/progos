@@ -254,7 +254,7 @@ footer .container-1 .group-1 .accordion .item:not(.active) .title {
 footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
   content: '';
   display: inline-block;
-  background-image: url(/images/footer-accordion-caret-icon.svg);
+  background-image: url(/images/icon-caret-solid-blue.svg);
   width: 16px;
   aspect-ratio: 1;
   border-radius: 50%;
