@@ -230,7 +230,7 @@ main section {
 }
 
 .footer .container-1 .group-1 .accordion .item.active .title {
-  color: unset;
+  color: var(--color-text);
   cursor: default;
 }
 
