@@ -53,6 +53,10 @@ screens as wide as 768 pixels and above.
 
   footer .container-1 .group-1 .accordion .item {
     flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 17px 16px;
   }
 
