@@ -19,6 +19,34 @@ screens as wide as 768 pixels and above.
   /*------------------------------------------
   BLOCKS
   ------------------------------------------*/
+
+  /* header */
+  header {
+    padding: 15px 24px 16px 32px;
+  }
+
+  header .logo {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  header .logo img {
+    width: 195.24px;
+    height: 34px;
+  }
+
+  header .logo .caption {
+    font-size: 14px;
+  }
+
+  header .right {
+    display: flex;
+  }
+
+  header .header-menu-button {
+    display: none;
+  }
+
   /* footer */
   footer .container-1 .group-1 .accordion {
     position: relative;
