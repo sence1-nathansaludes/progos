@@ -103,55 +103,55 @@ a {
 }
 
 /* header */
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
 
-header .logo {
+.header .logo {
   display: flex;
   align-items: center;
   gap: 16.5px;
   margin-left: 14px;
 }
 
-header .logo .caption {
+.header .logo .caption {
   font-size: 9px;
   line-height: 1.75;
 }
 
-header .right {
+.header .right {
   display: none;
   flex-direction: column;
   align-items: end;
   gap: 11px;
 }
 
-header .right .group-1 {
+.header .right .group-1 {
   display: flex;
   align-items: center;
   gap: 14.54px;
 }
 
-header .right .group-1 .caption {
+.header .right .group-1 .caption {
   font-size: 13px;
   text-align: right;
 }
 
-header .right .group-2 {
+.header .right .group-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 15px;
 }
 
-header .right .group-2 .cta-button {
+.header .right .group-2 .cta-button {
   width: 180px;
 }
 
-header .header-menu-button {
+.header .header-menu-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,7 +166,7 @@ header .header-menu-button {
   color: var(--color-white);
 }
 
-header .header-menu-button .icon {
+.header .header-menu-button .icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -174,13 +174,13 @@ header .header-menu-button .icon {
   width: 22px;
 }
 
-header .header-menu-button .icon > span {
+.header .header-menu-button .icon > span {
   display: block;
   height: 2px;
   background-color: var(--color-white);
 }
 
-header .header-menu-button .label {
+.header .header-menu-button .label {
   display: inline-block;
 }
 
@@ -190,38 +190,38 @@ main section {
 }
 
 /* footer */
-footer {
+.footer {
   width: 100%;
 }
 
-footer .container-1 .group-1 {
+.footer .container-1 .group-1 {
   padding: 30px 15px 80px;
 }
 
-footer .container-1 .group-1 .top-page-link {
+.footer .container-1 .group-1 .top-page-link {
   font-weight: 700;
 }
 
-footer .container-1 .group-1 .accordion {
+.footer .container-1 .group-1 .accordion {
   margin-top: 28px;
 }
 
-footer .container-1 .group-1 .accordion > .item + .item {
+.footer .container-1 .group-1 .accordion > .item + .item {
   margin-top: 10px;
 }
 
-footer .container-1 .group-1 .accordion .item {
+.footer .container-1 .group-1 .accordion .item {
   padding-inline: 20px;
   background-color: var(--color-white);
   border-radius: 4px;
 }
 
-footer .container-1 .group-1 .accordion .item:not(.active):hover {
+.footer .container-1 .group-1 .accordion .item:not(.active):hover {
   cursor: pointer;
   background-color: #ffffffb8;
 }
 
-footer .container-1 .group-1 .accordion .item .title {
+.footer .container-1 .group-1 .accordion .item .title {
   margin: 0;
   font-weight: 700;
   font-size: 16px;
@@ -229,19 +229,19 @@ footer .container-1 .group-1 .accordion .item .title {
   padding: 27px 0 0 0;
 }
 
-footer .container-1 .group-1 .accordion .item.active .title {
+.footer .container-1 .group-1 .accordion .item.active .title {
   color: unset;
   cursor: default;
 }
 
-footer .container-1 .group-1 .accordion .item:not(.active) .title {
+.footer .container-1 .group-1 .accordion .item:not(.active) .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 17px 0 16px;
 }
 
-footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
+.footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
   content: '';
   display: inline-block;
   background-image: url(/images/icon-caret-solid-blue.svg);
@@ -250,13 +250,13 @@ footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
   border-radius: 50%;
 }
 
-footer .container-1 .group-1 .accordion .item .content {
+.footer .container-1 .group-1 .accordion .item .content {
   margin-top: 26px;
   display: none;
   padding-bottom: 16px;
 }
 
-footer .container-1 .group-1 .accordion .item.active .content {
+.footer .container-1 .group-1 .accordion .item.active .content {
   display: block;
 }
 
@@ -296,7 +296,7 @@ footer .container-1 .group-1 .accordion .item.active .content {
 }
 
 
-footer .container-1 .group-1 .tab-content {
+.footer .container-1 .group-1 .tab-content {
   display: none;
   margin-top: 3px;
   padding: 37px 40px;
@@ -304,7 +304,7 @@ footer .container-1 .group-1 .tab-content {
   background-color: var(--color-white);
 }
 
-footer .container-1 .group-1 .cta-buttons {
+.footer .container-1 .group-1 .cta-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,34 +313,34 @@ footer .container-1 .group-1 .cta-buttons {
   margin-top: 40px;
 }
 
-footer .container-1 .group-1 .cta-buttons .button {
+.footer .container-1 .group-1 .cta-buttons .button {
   width: 230px;
   padding: 15px 0;
   font-size: 14px;
 }
 
-footer .container-1 .group-2 {
+.footer .container-1 .group-2 {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-block: 2px 28px;
   text-align: center;
 }
 
-footer .container-1 .group-2 p {
+.footer .container-1 .group-2 p {
   margin: 7px;
 }
 
-footer .container-1 .group-2 p>a+a {
+.footer .container-1 .group-2 p>a+a {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-footer .container-1 .group-2 p a {
+.footer .container-1 .group-2 p a {
   font-size: 14px;
   padding-inline: 20px;
   line-height: 24.5px;
   word-break: keep-all;
 }
 
-footer .container-2 {
+.footer .container-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -349,21 +349,21 @@ footer .container-2 {
   padding-block: 40px 36px;
 }
 
-footer .container-2 .group-1 {
+.footer .container-2 .group-1 {
   text-align: center;
 }
 
-footer .container-2 .group-1>img+img {
+.footer .container-2 .group-1>img+img {
   margin-left: 44px;
 }
 
-footer .container-2 .group-1 p {
+.footer .container-2 .group-1 p {
   font-weight: 700;
   font-size: 11px;
   line-height: 1.50;
 }
 
-footer .container-3 {
+.footer .container-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,13 +373,13 @@ footer .container-3 {
   padding-block: 32px 11px;
 }
 
-footer .container-3 p {
+.footer .container-3 p {
   font-size: 24px;
   line-height: 1.50;
   margin-top: 0;
 }
 
-footer .container-3 .copyright {
+.footer .container-3 .copyright {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75;

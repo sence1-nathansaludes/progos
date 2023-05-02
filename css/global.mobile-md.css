@@ -18,40 +18,40 @@ screens as wide as 768 pixels and above.
   ------------------------------------------*/
 
   /* header */
-  header {
+  .header {
     padding: 15px 24px 16px 32px;
   }
 
-  header .logo {
+  .header .logo {
     flex-wrap: wrap;
     margin-left: 0;
   }
 
-  header .logo img {
+  .header .logo img {
     width: 195.24px;
     height: 34px;
   }
 
-  header .logo .caption {
+  .header .logo .caption {
     font-size: 14px;
   }
 
-  header .right {
+  .header .right {
     display: flex;
   }
 
-  header .header-menu-button {
+  .header .header-menu-button {
     display: none;
   }
 
   /* footer */
-  footer .container-1 .group-1 .accordion {
+  .footer .container-1 .group-1 .accordion {
     position: relative;
     display: flex;
     gap: 3px;
   }
 
-  footer .container-1 .group-1 .accordion .item {
+  .footer .container-1 .group-1 .accordion .item {
     flex-grow: 1;
     flex-basis: 100%;
     display: flex;
@@ -60,36 +60,36 @@ screens as wide as 768 pixels and above.
     padding: 17px 16px;
   }
 
-  footer .container-1 .group-1 .accordion .item:not(.active):hover {
+  .footer .container-1 .group-1 .accordion .item:not(.active):hover {
     background-color: #ffffffb7;
     cursor: pointer;
   }
 
-  footer .container-1 .group-1 .accordion>.item+.item {
+  .footer .container-1 .group-1 .accordion>.item+.item {
     margin: 0;
   }
 
-  footer .container-1 .group-1 .accordion .item .title {
+  .footer .container-1 .group-1 .accordion .item .title {
     text-align: center;
     padding: 0;
   }
 
-  footer .container-1 .group-1 .accordion .item:not(.active) .title {
+  .footer .container-1 .group-1 .accordion .item:not(.active) .title {
     padding: 0;
     justify-content: center;
   }
 
-  footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
+  .footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
     display: none;
   }
 
-  footer .container-1 .group-1 .accordion .item.active {
+  .footer .container-1 .group-1 .accordion .item.active {
     position: relative;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  footer .container-1 .group-1 .accordion .item.active::after {
+  .footer .container-1 .group-1 .accordion .item.active::after {
     position: absolute;
     content: "";
     bottom: -5px;
@@ -99,11 +99,11 @@ screens as wide as 768 pixels and above.
     background-color: var(--color-white);
   }
 
-  footer .container-1 .group-1 .accordion .item.active .content {
+  .footer .container-1 .group-1 .accordion .item.active .content {
     display: none;
   }
 
-  footer .container-1 .group-1 .tab-content.active {
+  .footer .container-1 .group-1 .tab-content.active {
     display: block;
   }
 
