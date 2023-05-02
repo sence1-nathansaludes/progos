@@ -34,13 +34,11 @@ a {
   color: #006DB5;
 }
 
-/* -----------------------------------
-COMPOSITION
+/* COMPOSITION
 ----------------------------------- */
 
 
-/* -----------------------------------
-UTILITY
+/* UTILITY
 ----------------------------------- */
 /* layouts */
 .w-full {
@@ -81,8 +79,7 @@ UTILITY
 }
 
 
-/* -----------------------------------
-BLOCK
+/* BLOCK
 ----------------------------------- */
 .button {
   display: inline-block;
@@ -280,7 +277,6 @@ footer .container-1 .group-1 .accordion .item.active .content {
   display: inline-flex;
   flex-direction: column;
   flex-basis: 100%;
-  /* outline: 1px dashed gray; */
 }
 
 #acc-item-content--service .group .label {
@@ -401,6 +397,5 @@ footer .container-3 .copyright {
 }
 
 
-/* -----------------------------------
-EXCEPTION
+/* EXCEPTION
 ----------------------------------- */
