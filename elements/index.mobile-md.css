@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  /* links */
+  #sample-container\:links {
+    flex-direction: row;
+    gap: 66px;
+  }
+
+  /* button stack */
+  #sample-container\:button-stack .cols-2 {
+    flex-wrap: nowrap;
+  }
+}

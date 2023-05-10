@@ -1,0 +1,66 @@
+/* links */
+#sample-container\:links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* button stack */
+#sample-container\:button-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 680px;
+  gap: 40px;
+}
+
+#sample-container\:button-stack .link-button {
+  margin: 0;
+}
+
+#sample-container\:button-stack .cols-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#sample-container\:button-stack .cols-2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* --------------------------------------------------
+These classes are only temporary and should be
+removed.
+-------------------------------------------------- */
+.TODO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  color: #bbbbbb;
+  min-height: 400px;
+  outline: 1px dashed #b8b8b8;
+  border-radius: 10px;
+}
+
+.TODO::after {
+  content: attr(data-text);
+  display: inline-block;
+}
+/* --------------------------------------------------
+These classes are only temporary and should be
+removed.
+-------------------------------------------------- */

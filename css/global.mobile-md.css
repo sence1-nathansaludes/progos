@@ -10,6 +10,23 @@ screens as wide as 768 pixels and above.
 
   /* COMPOSITION
   ------------------------------------------*/
+  .row {
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
 
   /* UTILITY
   ------------------------------------------*/
@@ -20,6 +37,7 @@ screens as wide as 768 pixels and above.
   /* header */
   .header {
     padding: 15px 24px 16px 32px;
+    height: auto;
   }
 
   .header .logo {
@@ -40,8 +58,192 @@ screens as wide as 768 pixels and above.
     display: flex;
   }
 
-  .header .header-menu-button {
+  /* alert */
+  .alert .content {
+    font-size: 14px;
+  }
+
+  /* menu */
+  .menu {
+    display: block;
+  }
+
+  /* menu button */
+  .menu-button {
     display: none;
+  }
+
+  /* breadcrumbs */
+  .breadcrumbs {
+    font-size: 12px;
+  }
+
+  /* page title */
+  .page-title {
+    padding: 72px 30px;
+    margin-bottom: 64px;
+  }
+
+  .page-title .text {
+    font-size: 34px;
+  }
+
+  /* page title with subtitle */
+  .page-title-sub {
+    margin-bottom: 42px;
+  }
+
+  .page-title-sub .title {
+    font-size: 28px;
+  }
+
+  .page-title-sub .subtitle {
+    font-size: 18px;
+    margin: 9px 0 0;
+  }
+
+  /* lead text */
+  .lead-text {
+    font-size: 18px;
+  }
+
+  /* heading 2 */
+  .heading-2 {
+    font-size: 28px;
+    margin-block: 72px 26px;
+  }
+
+  .heading-2::before {
+    margin-right: 16px;
+  }
+
+  /* heading 3 */
+  .heading-3 {
+    font-size: 24px;
+    margin-block: 37px 26px;
+  }
+
+  .heading-3::after {
+    margin-top: 10px;
+  }
+
+  /* heading 4 */
+  .heading-4 {
+    font-size: 20px;
+    margin-block: 33px 18px;
+  }
+
+  .heading-4::before {
+    margin-right: 14px;
+  }
+
+  /* heading 5 */
+  .heading-5 {
+    font-size: 18px;
+    margin-block: 22px 14px;
+  }
+
+  /* heading 6 */
+  .heading-6 {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-block: 20px 4px;
+  }
+
+  /* annotation */
+  .annotation {
+    font-size: 14px;
+  }
+
+  /* text link */
+  .text-link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* card */
+  .card .image {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+  }
+
+  .card .image.small {
+    width: 100%;
+    height: auto;
+    max-height: 144px;
+    object-fit: cover;
+  }
+
+  .card.to-right,
+  .card.to-left {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+  }
+
+  .card.to-right>.image,
+  .card.to-left>.image {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .card.to-right>p,
+  .card.to-left>p {
+    width: 520px;
+    margin: 0;
+  }
+
+  .card.to-right>.image {
+    order: 1;
+  }
+
+  .card.to-right>p {
+    order: 2;
+  }
+
+  .card.to-left>.image {
+    order: 2;
+  }
+
+  .card.to-left>p {
+    order: 1;
+  }
+
+  /* link button */
+  .link-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* one column table */
+  .horizontal-table .cell {
+    padding: 14px 16px;
+  }
+
+  .horizontal-table .table-heading {
+    width: 192px;
+  }
+
+  /* two dimensional table */
+  .two-dimensional-table tbody .table-heading {
+    width: 192px;
+  }
+
+  .two-dimensional-table .cell {
+    padding: 14px 16px;
+  }
+
+  /* highlight */
+  .highlight {
+    padding: 26px 32px;
+  }
+
+  .highlight .title {
+    font-size: 20px;
+    margin: 0 0 13px;
   }
 
   /* footer */
