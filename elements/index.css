@@ -36,6 +36,13 @@
   align-items: center;
 }
 
+/* banner */
+#sample-container\:3-banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 15px;
+}
+
 
 
 

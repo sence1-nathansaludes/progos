@@ -277,6 +277,11 @@ screens as wide as 768 pixels and above.
     line-height: 2;
   }
 
+  /* form - file upload */
+  .field-block .file-upload .file-name {
+    font-size: 14px;
+  }
+
   /* form - submit button */
   .submit-button {
     width: 100%;
@@ -293,6 +298,33 @@ screens as wide as 768 pixels and above.
 
   .submit-button.right {
     align-self: flex-end;
+  }
+
+  /* points */
+  .points .point {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .points .point .point-content {
+    margin: 0;
+  }
+
+  .points .point .point-image {
+    max-width: 320px;
+    min-height: 180px;
+    object-fit: cover;
+  }
+
+  /* banner */
+  .banner {
+    height: 120px;
+  }
+
+  .banner.large {
+    height: 160px;
   }
 
   /* footer */
