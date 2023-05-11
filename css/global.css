@@ -616,6 +616,164 @@ a {
   margin: 0 0 6px;
 }
 
+/* form */
+.form {
+  background-color: var(--color-bg-light-gray);
+  border-block: 1px solid var(--color-line-gray);
+}
+
+/* form - form group */
+.form .form-group {
+  padding: 20px;
+}
+
+.form>.form-group+.form-group {
+  border-top: 1px solid var(--color-line-gray);
+}
+
+.form-group .heading {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.form-group fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 0;
+  margin: 14px 0 0;
+  border: none;
+}
+
+/* form - field block */
+.field-block {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* form - field label */
+.field-block .field-label {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  gap: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.field-block .field-label .badge {
+  display: inline-block;
+  background-color: #999999;
+  color: var(--color-white);
+  font-size: 12px;
+  padding-inline: 4px;
+  transform: translateY(3px);
+}
+
+.field-block .field-label .badge.required {
+  background-color: var(--color-text-alert);
+}
+
+.field-block .field-annotation {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin: 0 0 10px;
+}
+
+.field-block .field-input {
+  display: flex;
+  padding: 9px 13px;
+  font-size: 16px;
+  line-height: 2;
+  border: 1px solid var(--color-gray);
+}
+
+.field-block .field-input:focus {
+  outline: 1px solid #00A68D;
+}
+
+.field-block.error .field-input {
+  background-color: #FAE5E5;
+  border: 1px solid #E9ABAB;
+}
+
+.field-block .field-input::placeholder {
+  color: #AAAAAA;
+}
+
+.field-block .error-message {
+  display: none;
+  color: var(--color-text-alert);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 6px;
+}
+
+.field-block.error .error-message {
+  display: block;
+}
+
+/* form - radio field */
+.field-block .radio-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.field-block > .radio-option + .radio-option {
+  margin-top: 4px;
+}
+
+.radio-option .radio-input {
+  transform: translateY(4.5px);
+}
+
+.radio-option .radio-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--color-text);
+}
+
+/* form - checkbox field */
+.field-block .checkbox-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.field-block.center .checkbox-option {
+  justify-content: center;
+}
+
+.checkbox-option .checkbox-input {
+  transform: translateY(4.5px);
+}
+
+.checkbox-option .checkbox-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--color-text);
+}
+
+/* form - submit button */
+.submit-button {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  padding: 16px;
+  width: 100%;
+}
+
 /* footer */
 .footer {
   width: 100%;
@@ -840,4 +998,9 @@ a {
 
 .link-button[data-type="new-window"]::after {
   content: url(/images/icon-copy.svg);
+}
+
+/* form - form group */
+.form-group[data-cols="2"] fieldset {
+  grid-template-columns: 1fr 1fr;
 }

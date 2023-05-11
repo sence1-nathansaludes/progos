@@ -246,6 +246,64 @@ screens as wide as 768 pixels and above.
     margin: 0 0 13px;
   }
 
+  /* form - field block */
+  .field-block.half {
+    max-width: calc(50% - 10px);
+  }
+
+  .field-block.long {
+    max-width: 70%;
+    min-width: 0;
+  }
+
+  .field-block.short {
+    max-width: 183px;
+  }
+
+  /* form - field label */
+  .field-block .field-annotation {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  /* form - radio field */
+  .radio-option .radio-input {
+    transform: translateY(6.5px);
+  }
+
+  .radio-option .radio-label {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  /* form - checkbox field */
+  .checkbox-option .checkbox-input {
+    transform: translateY(6.5px);
+  }
+
+  .checkbox-option .checkbox-label {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  /* form - submit button */
+  .submit-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .submit-button.left {
+    align-self: flex-start;
+  }
+
+  .submit-button.center {
+    align-self: center;
+  }
+
+  .submit-button.right {
+    align-self: flex-end;
+  }
+
   /* footer */
   .footer .container-1 .group-1 .accordion {
     position: relative;
