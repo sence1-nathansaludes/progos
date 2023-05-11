@@ -13,6 +13,7 @@ For styles that apply to device screen widths from
 
   /* gradients */
   --color-gr-main: linear-gradient(90deg, #0070BA 0%, #00A68D 100%, #00A68D 100%);
+  --color-gr-main10: linear-gradient(90deg, #E5F1F8 0%, #E5F6F4 100%);
   --color-gr-secondary: linear-gradient(90deg, #73B0D9 0%, #73CEC0 100%);
 
   /* texts */
@@ -48,6 +49,10 @@ html {
 a {
   text-decoration: none;
   color: #006DB5;
+}
+
+p {
+  margin: 0 0 1rem;
 }
 
 /* COMPOSITION
@@ -148,6 +153,11 @@ a {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
+}
+
+.button:hover {
+  cursor: pointer;
+  filter: brightness(1.07);
 }
 
 .cta-button {
