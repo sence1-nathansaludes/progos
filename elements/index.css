@@ -49,7 +49,7 @@ removed.
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   color: #bbbbbb;
   min-height: 400px;
   outline: 1px dashed #b8b8b8;

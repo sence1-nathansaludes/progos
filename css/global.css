@@ -19,16 +19,22 @@ For styles that apply to device screen widths from
   --color-text: #333333;
   --color-text-link: #006DB5;
   --color-text-alert: #BB0000;
-  --color-text-annotation: #666666;
+  --color-text-gray: #666666;
+
+  /* lines */
+  --color-line-gray: #D9DCDE;
+  --color-line-light-gray: #EBEEF0;
 
   /* backgrounds */
   --color-bg-alert: #F9F0F0;
+  --color-bg-gray: #E6EAED;
+  --color-bg-light-gray: #F0F3F5;
 
   /* neutral */
   --color-white: #FFFFFF;
   --color-black: #222222;
   --color-gray: #E6EAED;
-  --color-light-gray: #F0F3F5;
+  --color-light-gray: #CCCED0;
 }
 
 html {
@@ -430,7 +436,7 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75;
-  color: var(--color-text-annotation);
+  color: var(--color-text-gray);
   margin-block: 14px;
 }
 
@@ -560,7 +566,7 @@ a {
 }
 
 .horizontal-table .table-heading {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   font-weight: 700;
   width: 83px;
   text-align: left;
@@ -584,7 +590,7 @@ a {
 }
 
 .two-dimensional-table tbody .table-heading {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   width: 83px;
   text-align: left;
 }
@@ -598,7 +604,7 @@ a {
 
 /* highlight */
 .highlight {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   padding: 18px 20px;
   margin-block: 40px;
 }
@@ -696,7 +702,7 @@ a {
 #acc-item-content--service .group .label {
   margin: 0;
   padding: 18px 15px 17px;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   color: var(--color-black);
   font-weight: 700;
 }
@@ -713,7 +719,7 @@ a {
 }
 
 #acc-item-content--service .group ul>li+li {
-  border-top: 1px solid var(--color-light-gray);
+  border-top: 1px solid var(--color-bg-light-gray);
 }
 
 .footer .container-1 .group-1 .tab-content {
