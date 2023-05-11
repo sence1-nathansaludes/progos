@@ -51,7 +51,7 @@ removed.
   justify-content: center;
   background-color: var(--color-bg-light-gray);
   color: #bbbbbb;
-  min-height: 400px;
+  min-height: 200px;
   outline: 1px dashed #b8b8b8;
   border-radius: 10px;
 }

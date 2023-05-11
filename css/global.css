@@ -107,11 +107,14 @@ a {
 /* outlines */
 .outline {
   outline-width: 1px;
+  outline-style: solid;
   outline-color: #bbbbbb;
 }
 
 .outline-dashed {
+  outline-width: 1px;
   outline-style: dashed;
+  outline-color: #bbbbbb;
 }
 
 /* backgrounds */
@@ -477,17 +480,20 @@ a {
 }
 
 /* card */
-.card .image {
-  width: 100%;
-  height: auto;
-  max-height: 240px;
-  object-fit: cover;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.card .image.small {
-  width: 100%;
+.card > * {
+  margin: 0;
+}
+
+.card .image {
+  max-width: 100%;
   height: auto;
-  max-height: 144px;
   object-fit: cover;
 }
 
@@ -990,6 +996,7 @@ a {
 .link-button[data-type="cv"] {
   color: var(--color-white);
   background-color: var(--color-orange);
+  border: none;
 }
 
 .link-button[data-type="cv"]::after {

@@ -163,16 +163,8 @@ screens as wide as 768 pixels and above.
 
   /* card */
   .card .image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 240px;
-    object-fit: cover;
-  }
-
-  .card .image.small {
-    width: 100%;
-    height: auto;
-    max-height: 144px;
     object-fit: cover;
   }
 
@@ -192,7 +184,6 @@ screens as wide as 768 pixels and above.
 
   .card.to-right>p,
   .card.to-left>p {
-    width: 520px;
     margin: 0;
   }
 
