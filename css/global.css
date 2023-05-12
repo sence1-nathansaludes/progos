@@ -6,6 +6,8 @@ with screen widths below 768 pixels (exclusive).
 For styles that apply to device screen widths from
 768 pixels and above is found on: global.mobile-md.css
 ----------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 :root {
   /* primary colors */
   --color-orange: #DE7A00;
@@ -864,20 +866,22 @@ a {
 
 /* LIST */
 
-.list--container{
+.list-section{
   background-color: var(--color-light-gray);
   padding: 27px 20px 27px 0px;
+  
 }
 
-.list--container ul{
+.list--container {
   list-style: none;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding-left: 44px;
 }
 
-.list--container ul li::before{
+.list--container  li::before{
   content: " ";
   background: url(/images/bullet.svg);
   height: 6px;
@@ -895,6 +899,7 @@ a {
   display: flex;
   flex-direction: column;
   padding: 32px 20px 27px;
+  align-items: center;
 }
 
 .profile-imgcontainer{
@@ -904,6 +909,7 @@ a {
   align-items: center;
   height: 180px;
   width: 100%;
+  max-width: 305px;
 }
 
 .profile .text-link{
@@ -912,4 +918,92 @@ a {
 
 .profile .text-link::before{
   content: none;
+}
+
+/* MAIN POINT */
+.main-point-container{
+  background-color: var(--color-light-gray);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.main-point-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-point-box{
+  width: 100%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-blue);
+  color: var(--color-blue);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 9px 0;
+}
+
+.main-point-section .list--container{
+  padding-left: 24px;
+}
+
+.main-point-box{
+  margin-bottom: 14px;
+}
+
+/* STEPS */
+
+.step--container{
+  background-color: var(--color-light-gray);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step--box{
+  padding: 4px;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.step-title{
+background-color: var(--color-blue);
+color: var(--color-white);
+display: flex;
+justify-content: center;
+font-weight: 500;
+font-family: 'Roboto', sans-serif;
+}
+
+.step--box p{
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.step--box::after{
+  content: ' ';
+  background: url(/images/arr.svg) center no-repeat;
+  height: 8px;
+  width: 16px;
+  background-size: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: -16px;
+}
+
+.step--box:last-child::after{
+  content: none;
+
 }

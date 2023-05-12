@@ -379,5 +379,59 @@ screens as wide as 768 pixels and above.
   display: flex;
 }
 
+/* MAIN POINT */
+
+.main-point-container{
+  padding: 32px;
+  gap: 16px;
 }
 
+.main-point-section{
+  flex-direction: row;
+  gap: 30px;
+}
+
+.main-point-box{
+  max-width: 136px;
+  min-height: 88px;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.main-point-section .list--container{
+  justify-content: center;
+}
+
+/* STEPS */
+
+.step--container{
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.step--box{
+  width: 142px;
+  height: 106px;
+  
+}
+
+.step--box::after {
+  content: ' ';
+  background: url(/images/arr.svg) center no-repeat;
+  height: 8px;
+  width: 16px;
+  background-size: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 157px;
+  right: -30px;
+  top: 55px;
+  bottom: 0;
+  transform: rotate(270deg);
+
+}
+
+}
