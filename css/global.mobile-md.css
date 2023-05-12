@@ -338,4 +338,46 @@ screens as wide as 768 pixels and above.
 
   /* EXCEPTION
   ------------------------------------------*/
+
+  /* SPEAKER */
+  .speaker-group{
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .speaker-text-container{
+    gap: 20px;
+    margin-top: 0;
+  }
+
+  /* PROFILE */
+.profile{
+  flex-direction: row;
+  gap: 32px;
+  padding: 32px;
 }
+
+.profile-imgcontainer{
+  height: 72px;
+  width: 132px;
+  padding: 24px;
+}
+
+.profile-imgcontainer img{
+  height: 72px;
+  width: 132px;
+}
+.profile-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile .heading-6{
+  margin-top: 0;
+  display: flex;
+}
+
+}
+
