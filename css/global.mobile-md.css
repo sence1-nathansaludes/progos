@@ -409,6 +409,7 @@ screens as wide as 768 pixels and above.
   flex-direction: row;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 40px 60px;
 }
 
 .step--box{
