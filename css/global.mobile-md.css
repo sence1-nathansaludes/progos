@@ -435,4 +435,13 @@ screens as wide as 768 pixels and above.
 
 }
 
+/* ACCORDION */
+.panel{
+  padding: 24px;
+}
+
+.accordion-section{
+  padding: 24px;
+}
+
 }

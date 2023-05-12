@@ -1014,21 +1014,76 @@ font-family: 'Roboto', sans-serif;
   background-color: var(--color-light-gray);
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 24px 15px;
+  padding-right: 49px;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  margin-bottom: 2px;
 }
 
-/* .active, .accordion:hover {
-  background-color: #ccc;
-} */
+.accordion-section.active{
+  margin-bottom: 0;
+}
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
+.accordion-section p{
+  margin: 0;
+  font-weight: 700;
+}
+
+.panel p{
+  font-weight: 400;
+}
+
+.toogle-icon{
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+}
+
+.accordion-section .minus-icon{
+  display: none;
+}
+
+.accordion-section.active .add-icon{
+  display: none;
+}
+
+.accordion-section.active .minus-icon{
+  display: block;
+}
+
+
+.accordion-section.active .panel-container{
+  margin-bottom: 2px;
+}
+
+.panel-container {
+  padding: 0 15px 15px 15px;
+  background-color: var(--color-light-gray);
   display: none;
   overflow: hidden;
 }
+
+.panel{
+  background-color: var(--color-white);
+  padding: 24px 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.panel p{
+
+  margin: 0;
+  
+}
+
