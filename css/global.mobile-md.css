@@ -10,23 +10,7 @@ screens as wide as 768 pixels and above.
 
   /* COMPOSITION
   ------------------------------------------*/
-  .row {
-    column-gap: 40px;
-    row-gap: 40px;
-  }
 
-  .cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
 
   /* UTILITY
   ------------------------------------------*/
@@ -203,12 +187,6 @@ screens as wide as 768 pixels and above.
     order: 1;
   }
 
-  /* link button */
-  .link-button {
-    width: 100%;
-    max-width: 320px;
-  }
-
   /* one column table */
   .horizontal-table .cell {
     padding: 14px 16px;
@@ -225,6 +203,12 @@ screens as wide as 768 pixels and above.
 
   .two-dimensional-table .cell {
     padding: 14px 16px;
+  }
+
+
+  /* button - link & image */
+  .link-button-image {
+    padding: 17px 17px 17px 21px;
   }
 
   /* highlight */
@@ -325,6 +309,47 @@ screens as wide as 768 pixels and above.
 
   .banner.large {
     height: 160px;
+  }
+
+  /* one dimensional table */
+  .one-dimensional-table .table-row {
+    padding: 14px 15px;
+  }
+
+  .one-dimensional-table .table-content {
+    padding: 18px 20px;
+  }
+
+  /* card cta */
+  .card-cta .content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 38px 40px;
+  }
+
+  .card-cta .content .image {
+    align-self: center;
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-cta .content .text-content .heading {
+    font-size: 18px;
+  }
+
+  .card-cta .button-slot .link-button {
+    max-width: 320px;
+  }
+
+  /* past speakers */
+  .past-speakers .heading {
+    margin-bottom: 14px;
+  }
+
+  .past-speakers > * + * {
+    margin-bottom: 4px;
   }
 
   /* footer */
