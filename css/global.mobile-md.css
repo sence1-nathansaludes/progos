@@ -455,6 +455,15 @@ screens as wide as 768 pixels and above.
     margin-top: 0;
   }
 
+  /* unordered list */
+  ul.list ul {
+    margin-top: 12px;
+  }
+
+  ul.list li + li {
+    margin-top: 4px;
+  }
+
   /* footer */
   .footer .container-1 .group-1 .accordion {
     position: relative;
