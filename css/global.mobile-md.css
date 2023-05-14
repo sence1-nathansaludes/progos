@@ -10,23 +10,7 @@ screens as wide as 768 pixels and above.
 
   /* COMPOSITION
   ------------------------------------------*/
-  .row {
-    column-gap: 40px;
-    row-gap: 40px;
-  }
 
-  .cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .cols-4 {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
 
   /* UTILITY
   ------------------------------------------*/
@@ -163,16 +147,8 @@ screens as wide as 768 pixels and above.
 
   /* card */
   .card .image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-height: 240px;
-    object-fit: cover;
-  }
-
-  .card .image.small {
-    width: 100%;
-    height: auto;
-    max-height: 144px;
     object-fit: cover;
   }
 
@@ -192,7 +168,6 @@ screens as wide as 768 pixels and above.
 
   .card.to-right>p,
   .card.to-left>p {
-    width: 520px;
     margin: 0;
   }
 
@@ -210,12 +185,6 @@ screens as wide as 768 pixels and above.
 
   .card.to-left>p {
     order: 1;
-  }
-
-  /* link button */
-  .link-button {
-    width: 100%;
-    max-width: 320px;
   }
 
   /* one column table */
@@ -236,6 +205,12 @@ screens as wide as 768 pixels and above.
     padding: 14px 16px;
   }
 
+
+  /* button - link & image */
+  .link-button-image {
+    padding: 17px 17px 17px 21px;
+  }
+
   /* highlight */
   .highlight {
     padding: 26px 32px;
@@ -244,6 +219,137 @@ screens as wide as 768 pixels and above.
   .highlight .title {
     font-size: 20px;
     margin: 0 0 13px;
+  }
+
+  /* form - field block */
+  .field-block.half {
+    max-width: calc(50% - 10px);
+  }
+
+  .field-block.long {
+    max-width: 70%;
+    min-width: 0;
+  }
+
+  .field-block.short {
+    max-width: 183px;
+  }
+
+  /* form - field label */
+  .field-block .field-annotation {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  /* form - radio field */
+  .radio-option .radio-input {
+    transform: translateY(6.5px);
+  }
+
+  .radio-option .radio-label {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  /* form - checkbox field */
+  .checkbox-option .checkbox-input {
+    transform: translateY(6.5px);
+  }
+
+  .checkbox-option .checkbox-label {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  /* form - file upload */
+  .field-block .file-upload .file-name {
+    font-size: 14px;
+  }
+
+  /* form - submit button */
+  .submit-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .submit-button.left {
+    align-self: flex-start;
+  }
+
+  .submit-button.center {
+    align-self: center;
+  }
+
+  .submit-button.right {
+    align-self: flex-end;
+  }
+
+  /* points */
+  .points .point {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .points .point .point-content {
+    margin: 0;
+  }
+
+  .points .point .point-image {
+    max-width: 320px;
+    min-height: 180px;
+    object-fit: cover;
+  }
+
+  /* banner */
+  .banner {
+    height: 120px;
+  }
+
+  .banner.large {
+    height: 160px;
+  }
+
+  /* one dimensional table */
+  .one-dimensional-table .table-row {
+    padding: 14px 15px;
+  }
+
+  .one-dimensional-table .table-content {
+    padding: 18px 20px;
+  }
+
+  /* card cta */
+  .card-cta .content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 38px 40px;
+  }
+
+  .card-cta .content .image {
+    align-self: center;
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-cta .content .text-content .heading {
+    font-size: 18px;
+  }
+
+  .card-cta .button-slot .link-button {
+    max-width: 320px;
+  }
+
+  /* past speakers */
+  .past-speakers .heading {
+    margin-bottom: 14px;
+  }
+
+  .past-speakers > * + * {
+    margin-bottom: 4px;
   }
 
   /* footer */
