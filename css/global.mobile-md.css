@@ -95,30 +95,21 @@ screens as wide as 768 pixels and above.
   .heading-2 {
     font-size: 28px;
     margin-block: 72px 26px;
-  }
-
-  .heading-2::before {
-    margin-right: 16px;
+    padding-left: 20px;
   }
 
   /* heading 3 */
   .heading-3 {
     font-size: 24px;
     margin-block: 37px 26px;
-  }
-
-  .heading-3::after {
-    margin-top: 10px;
+    padding-bottom: 9px;
   }
 
   /* heading 4 */
   .heading-4 {
     font-size: 20px;
     margin-block: 33px 18px;
-  }
-
-  .heading-4::before {
-    margin-right: 14px;
+    padding-left: 15px;
   }
 
   /* heading 5 */
