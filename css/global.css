@@ -1395,6 +1395,22 @@ ul.list ul ul li::before {
   display: block;
 }
 
+/* tag */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  outline: 1px solid var(--color-line-gray);
+  border-radius: 4px;
+  margin: 8px 4px;
+}
+
+.tag:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-weight: 700;
+  outline: none;
+}
+
 /* footer */
 .footer {
   width: 100%;
