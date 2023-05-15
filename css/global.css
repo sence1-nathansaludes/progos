@@ -1352,11 +1352,17 @@ ul.list ul ul li::before {
   padding: 16px 0;
 }
 
+.tabs > .tab-item-container > .tab-item:not(.active):hover {
+  background-color: #ffffffb3;
+  cursor: pointer;
+}
+
 .tabs > .tab-item-container > .tab-item.active {
   background-color: transparent;
 }
 
 .tabs > .tab-item-container > .tab-item > * {
+  color: var(--color-text-link);
   font-weight: 700;
   text-align: center;
   flex-basis: 100%;
