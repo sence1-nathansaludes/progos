@@ -1317,6 +1317,24 @@ ul.list ul ul li::before {
   width: 4px;
 }
 
+/* link collection */
+.link-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 24px;
+}
+
+.link-collection > * {
+  min-width: 258px;
+  flex-grow: 1;
+  max-width: calc((100% / 4) - 2px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-inline: 1px solid var(--color-line-gray);
+}
+
 /* footer */
 .footer {
   width: 100%;
