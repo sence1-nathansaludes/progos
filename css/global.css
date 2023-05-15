@@ -241,6 +241,8 @@ p {
 
 /* section */
 .section {
+  max-width: 1040px;
+  margin-inline: auto;
   margin-bottom: 80px;
   padding-inline: 15px;
 }
