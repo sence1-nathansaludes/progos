@@ -1173,6 +1173,16 @@ p {
   padding: 4px;
   background-color: var(--color-white);
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-box-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
 }
 
 .step-title {
@@ -1188,8 +1198,7 @@ p {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 16px;
+
 }
 
 .step--box::after {
