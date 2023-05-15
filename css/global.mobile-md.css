@@ -464,6 +464,15 @@ screens as wide as 768 pixels and above.
     margin-top: 4px;
   }
 
+  /* tabs */
+  .tabs > .tab-item-container > .tab-item {
+    padding: 20px 0;
+  }
+
+  .tabs .content-area > .inner-container {
+    padding: 24px;
+  }
+
   /* footer */
   .footer .container-1 .group-1 .accordion {
     position: relative;

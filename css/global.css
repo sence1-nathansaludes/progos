@@ -1335,6 +1335,66 @@ ul.list ul ul li::before {
   border-inline: 1px solid var(--color-line-gray);
 }
 
+/* tabs */
+.tabs {
+  background-color: var(--color-bg-light-gray);
+}
+
+.tabs > .tab-item-container {
+  display: flex;
+}
+
+.tabs > .tab-item-container > .tab-item {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: stretch;
+  background-color: var(--color-white);
+  padding: 16px 0;
+}
+
+.tabs > .tab-item-container > .tab-item.active {
+  background-color: transparent;
+}
+
+.tabs > .tab-item-container > .tab-item > * {
+  font-weight: 700;
+  text-align: center;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--color-line-gray);
+  padding-inline: 13px;
+}
+
+.tabs > .tab-item-container > .tab-item:last-of-type > * {
+  border-right: 1px solid var(--color-line-gray);
+}
+
+.tabs > .tab-item-container > .tab-item.active + .tab-item > * {
+  border-left: none;
+}
+
+.tabs > .tab-item-container > .tab-item.active > * {
+  border: none;
+  color: var(--color-black);
+}
+
+.tabs > .content-area {
+  display: block;
+  padding: 8px;
+}
+
+.tabs .content-area > .inner-container {
+  display: none;
+  background-color: var(--color-white);
+  padding: 24px 16px;
+}
+
+.tabs .content-area > .inner-container.active {
+  display: block;
+}
+
 /* footer */
 .footer {
   width: 100%;
