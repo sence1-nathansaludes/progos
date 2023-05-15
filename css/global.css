@@ -1267,7 +1267,7 @@ p {
 
 .panel-container {
   padding: 0 15px 15px 15px;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-bg-light-gray);
   display: none;
   overflow: hidden;
 }
