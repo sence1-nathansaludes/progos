@@ -1,3 +1,8 @@
+$('html').click(function() {
+  // Hide active menus
+  $(".custom-select .custom-select-options").removeClass("show");
+});
+
 /* Accordion Script
 ---------------------------------------------------------------------------------------- */
 window.onload = function () {
@@ -23,6 +28,26 @@ $("footer .container-1 .group-1 .accordion .item").click(function () {
   }
 });
 
+/* Select Input Script
+---------------------------------------------------------------------------------------- */
+$(".custom-select .field-input").on("click", function(event) {
+  event.stopPropagation();
+  $(this).siblings(".custom-select-options").addClass("show");
+});
+
+$(".custom-select .custom-select-options .option").on("click", function() {
+  const value = $(this).attr("value");
+
+  $(this).parent().siblings(".field-input").each(function() {
+    $(this).val(value);
+  });
+
+  $(this).parent().removeClass("show");
+});
+
+$(".custom-select .custom-select-options .option").focusout("click", function() {
+  $(this).parent().removeClass("show");
+})
 
 /* Tabs Script
 ---------------------------------------------------------------------------------------- */

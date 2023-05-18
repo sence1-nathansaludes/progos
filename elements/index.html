@@ -645,7 +645,16 @@
                     <span class="text">都道府県</span>
                     <span class="badge required">必須</span>
                   </label>
-                  <input class="field-input" type="text" placeholder="選択してください" required>
+                  <div class="custom-select">
+                    <input class="field-input" name="prefecture" type="text" placeholder="選択してください" readonly required>
+                    <div class="custom-select-options">
+                      <span class="option" value="1">1</span>
+                      <span class="option" value="2">2</span>
+                      <span class="option" value="3">3</span>
+                      <span class="option" value="4">4</span>
+                      <span class="option" value="5">5</span>
+                    </div>
+                  </div>
                   <span class="error-message">必須のフィールドに入力してください。</span>
                 </div>
                 <div class="field-block ">
@@ -884,7 +893,6 @@
           <div class="step-box-text">
             <p>○○○○○</p>
           </div>
-          
         </div>
         <div class="step--box">
           <div class="step-title">STEP 07</div>
