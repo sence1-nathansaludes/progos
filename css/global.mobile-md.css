@@ -94,7 +94,7 @@ screens as wide as 768 pixels and above.
   /* heading 2 */
   .heading-2 {
     font-size: 28px;
-    margin-block: 72px 26px;
+    /* margin-block: 72px 26px; */
     padding-left: 20px;
   }
 

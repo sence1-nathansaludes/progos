@@ -242,11 +242,18 @@ p {
 
 
 /* section */
+
+.section:first-of-type {
+  padding-top: 0;
+}
+
 .section {
   max-width: 1040px;
-  margin-inline: auto;
-  margin-bottom: 80px;
-  padding-inline: 15px;
+  padding: 30px 15px;
+  margin: 0 auto;
+  /* margin-inline: auto; */
+  /* margin-bottom: 80px; */
+  /*padding-inline: 15px; */
 }
 
 /* alert */
@@ -404,7 +411,7 @@ p {
   display: flex;
   font-size: 24px;
   line-height: 1.5;
-  margin-block: 58px 17px;
+  /* margin-block: 58px 17px; */
   padding-left: 14px;
   border-left: 4px solid var(--color-blue);
 }
