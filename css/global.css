@@ -86,11 +86,12 @@ p {
 
 /* margins */
 .mx-auto {
-  margin-inline: auto;
+  margin: auto;
 }
 
 .my-80px {
-  margin-block: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* outlines */
@@ -243,7 +244,8 @@ p {
 /* section */
 .section {
   max-width: 1040px;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 80px;
   padding-inline: 15px;
 }
@@ -351,10 +353,10 @@ p {
   display: flex;
 }
 
-.breadcrumbs .links .item:not(:last-child)::after {
+.breadcrumbs .links .breadcrumb-item:not(:last-child)::after {
   content: url('/images/icon-breadcrumb-caret.svg');
-  display: inline-block;
-  margin-inline: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 /* page title */
@@ -548,7 +550,7 @@ p {
 
 /* link button */
 .link-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   border-radius: 4px;
   padding: 13px;
@@ -557,15 +559,16 @@ p {
   font-weight: 700;
   gap: 8px;
   margin: 12px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.link-button .text {
-  margin-inline: auto;
-}
 
 .link-button::after {
   content: url(/images/icon-caret-right.svg);
-  display: inline-block;
+  position: absolute;
+  right: 13px;
 }
 
 /* horizontal table */
@@ -1484,22 +1487,22 @@ ul.list ul ul li::before {
   margin-top: 28px;
 }
 
-.footer .container-1 .group-1 .accordion>.item+.item {
+.footer .container-1 .group-1 .accordion>.accordion-item+.accordion-item {
   margin-top: 10px;
 }
 
-.footer .container-1 .group-1 .accordion .item {
+.footer .container-1 .group-1 .accordion .accordion-item {
   padding-inline: 20px;
   background-color: var(--color-white);
   border-radius: 4px;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active):hover {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active):hover {
   cursor: pointer;
   background-color: #ffffffb8;
 }
 
-.footer .container-1 .group-1 .accordion .item .title {
+.footer .container-1 .group-1 .accordion .accordion-item .title {
   margin: 0;
   font-weight: 700;
   font-size: 16px;
@@ -1507,19 +1510,19 @@ ul.list ul ul li::before {
   padding: 27px 0 0 0;
 }
 
-.footer .container-1 .group-1 .accordion .item.active .title {
+.footer .container-1 .group-1 .accordion .accordion-item.active .title {
   color: var(--color-text);
   cursor: default;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active) .title {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 17px 0 16px;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title::after {
   content: '';
   display: inline-block;
   background-image: url(/images/icon-caret-solid-blue.svg);
@@ -1528,13 +1531,13 @@ ul.list ul ul li::before {
   border-radius: 50%;
 }
 
-.footer .container-1 .group-1 .accordion .item .content {
+.footer .container-1 .group-1 .accordion .accordion-item .content {
   margin-top: 26px;
   display: none;
   padding-bottom: 16px;
 }
 
-.footer .container-1 .group-1 .accordion .item.active .content {
+.footer .container-1 .group-1 .accordion .accordion-item.active .content {
   display: block;
 }
 
