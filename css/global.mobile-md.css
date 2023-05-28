@@ -94,35 +94,40 @@ screens as wide as 768 pixels and above.
   /* heading 2 */
   .heading-2 {
     font-size: 28px;
-    margin-block: 72px 26px;
+    margin-top: 72px;
+    margin-bottom: 26px;
     padding-left: 20px;
   }
 
   /* heading 3 */
   .heading-3 {
     font-size: 24px;
-    margin-block: 37px 26px;
+    margin-top: 37px;
+    margin-bottom: 26px;
     padding-bottom: 9px;
   }
 
   /* heading 4 */
   .heading-4 {
     font-size: 20px;
-    margin-block: 33px 18px;
+    margin-top: 33px;
+    margin-bottom: 18px;
     padding-left: 15px;
   }
 
   /* heading 5 */
   .heading-5 {
     font-size: 18px;
-    margin-block: 22px 14px;
+    margin-top: 22px;
+    margin-bottom: 14px;
   }
 
   /* heading 6 */
   .heading-6 {
     font-size: 16px;
     line-height: 1.75;
-    margin-block: 20px 4px;
+    margin-top: 20px;
+    margin-bottom: 4px;
   }
 
   /* annotation */
