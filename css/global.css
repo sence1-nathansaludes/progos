@@ -315,7 +315,7 @@ p {
   font-size: 9px;
   border: none;
   min-width: 54px;
-  aspect-ratio: 1;
+  min-height: 54px;
   color: var(--color-white);
 }
 
@@ -994,8 +994,8 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1;
   width: 34px;
+  height: 34px;
   border-radius: 4px;
 }
 
@@ -1369,7 +1369,7 @@ ul.list li::before {
   display: inline-block;
   content: '';
   width: 6px;
-  aspect-ratio: 1;
+  height: 6px;
   border-radius: 50%;
   translate: -12px -3px;
   background-color: var(--color-blue);
@@ -1542,7 +1542,7 @@ ul.list ul ul li::before {
   display: inline-block;
   background-image: url(/images/icon-caret-solid-blue.svg);
   width: 16px;
-  aspect-ratio: 1;
+  height: 16px;
   border-radius: 50%;
 }
 
