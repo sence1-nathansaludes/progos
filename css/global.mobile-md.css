@@ -94,35 +94,40 @@ screens as wide as 768 pixels and above.
   /* heading 2 */
   .heading-2 {
     font-size: 28px;
-    margin-block: 72px 26px;
+    margin-top: 72px;
+    margin-bottom: 26px;
     padding-left: 20px;
   }
 
   /* heading 3 */
   .heading-3 {
     font-size: 24px;
-    margin-block: 37px 26px;
+    margin-top: 37px;
+    margin-bottom: 26px;
     padding-bottom: 9px;
   }
 
   /* heading 4 */
   .heading-4 {
     font-size: 20px;
-    margin-block: 33px 18px;
+    margin-top: 33px;
+    margin-bottom: 18px;
     padding-left: 15px;
   }
 
   /* heading 5 */
   .heading-5 {
     font-size: 18px;
-    margin-block: 22px 14px;
+    margin-top: 22px;
+    margin-bottom: 14px;
   }
 
   /* heading 6 */
   .heading-6 {
     font-size: 16px;
     line-height: 1.75;
-    margin-block: 20px 4px;
+    margin-top: 20px;
+    margin-bottom: 4px;
   }
 
   /* annotation */
@@ -471,7 +476,7 @@ screens as wide as 768 pixels and above.
     gap: 3px;
   }
 
-  .footer .container-1 .group-1 .accordion .item {
+  .footer .container-1 .group-1 .accordion .accordion-item {
     flex-grow: 1;
     flex-basis: 100%;
     display: flex;
@@ -480,36 +485,36 @@ screens as wide as 768 pixels and above.
     padding: 17px 16px;
   }
 
-  .footer .container-1 .group-1 .accordion .item:not(.active):hover {
+  .footer .container-1 .group-1 .accordion .accordion-item:not(.active):hover {
     background-color: #ffffffb7;
     cursor: pointer;
   }
 
-  .footer .container-1 .group-1 .accordion>.item+.item {
+  .footer .container-1 .group-1 .accordion>.accordion-item+.accordion-item {
     margin: 0;
   }
 
-  .footer .container-1 .group-1 .accordion .item .title {
+  .footer .container-1 .group-1 .accordion .accordion-item .title {
     text-align: center;
     padding: 0;
   }
 
-  .footer .container-1 .group-1 .accordion .item:not(.active) .title {
+  .footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title {
     padding: 0;
     justify-content: center;
   }
 
-  .footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
+  .footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title::after {
     display: none;
   }
 
-  .footer .container-1 .group-1 .accordion .item.active {
+  .footer .container-1 .group-1 .accordion .accordion-item.active {
     position: relative;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  .footer .container-1 .group-1 .accordion .item.active::after {
+  .footer .container-1 .group-1 .accordion .accordion-item.active::after {
     position: absolute;
     content: "";
     bottom: -5px;
@@ -519,7 +524,7 @@ screens as wide as 768 pixels and above.
     background-color: var(--color-white);
   }
 
-  .footer .container-1 .group-1 .accordion .item.active .content {
+  .footer .container-1 .group-1 .accordion .accordion-item.active .content {
     display: none;
   }
 

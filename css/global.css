@@ -86,11 +86,12 @@ p {
 
 /* margins */
 .mx-auto {
-  margin-inline: auto;
+  margin: auto;
 }
 
 .my-80px {
-  margin-block: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* outlines */
@@ -243,9 +244,11 @@ p {
 /* section */
 .section {
   max-width: 1040px;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 80px;
-  padding-inline: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* alert */
@@ -283,7 +286,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .menu .menu-links .menu-item:first-child {
@@ -311,7 +315,7 @@ p {
   font-size: 9px;
   border: none;
   min-width: 54px;
-  aspect-ratio: 1;
+  min-height: 54px;
   color: var(--color-white);
 }
 
@@ -341,7 +345,8 @@ p {
 }
 
 .breadcrumbs .container {
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .breadcrumbs .links {
@@ -351,10 +356,10 @@ p {
   display: flex;
 }
 
-.breadcrumbs .links .item:not(:last-child)::after {
+.breadcrumbs .links .breadcrumb-item:not(:last-child)::after {
   content: url('/images/icon-breadcrumb-caret.svg');
-  display: inline-block;
-  margin-inline: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 /* page title */
@@ -403,7 +408,8 @@ p {
   display: flex;
   font-size: 24px;
   line-height: 1.5;
-  margin-block: 58px 17px;
+  margin-top: 58px;
+  margin-bottom: 17px;
   padding-left: 14px;
   border-left: 4px solid var(--color-blue);
 }
@@ -414,7 +420,8 @@ p {
   line-height: 1.5;
   display: flex;
   flex-wrap: wrap;
-  margin-block: 21px 18px;
+  margin-top: 21px;
+  margin-bottom: 18px;
   padding-bottom: 11px;
   border-bottom: 1px solid var(--color-blue);
 }
@@ -425,7 +432,8 @@ p {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
-  margin-block: 27px 10px;
+  margin-top: 27px;
+  margin-bottom: 10px;
   padding-left: 12px;
   border-left: 2px solid var(--color-blue);
 }
@@ -435,7 +443,8 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  margin-block: 23px 6px;
+  margin-top: 23px;
+  margin-bottom: 6px;
 }
 
 /* heading 6 */
@@ -443,7 +452,8 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  margin-block: 23px 7px;
+  margin-top: 23px;
+  margin-bottom: 7px;
 }
 
 /* annotation */
@@ -451,9 +461,10 @@ p {
   display: flex;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.75;
   color: var(--color-text-gray);
-  margin-block: 14px;
+  line-height: 1.75;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .annotation::before {
@@ -548,7 +559,7 @@ p {
 
 /* link button */
 .link-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   border-radius: 4px;
   padding: 13px;
@@ -557,23 +568,25 @@ p {
   font-weight: 700;
   gap: 8px;
   margin: 12px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.link-button .text {
-  margin-inline: auto;
-}
 
 .link-button::after {
   content: url(/images/icon-caret-right.svg);
-  display: inline-block;
+  position: absolute;
+  right: 13px;
 }
 
 /* horizontal table */
 .horizontal-table {
   width: 100%;
   border-collapse: collapse;
-  border-block: 1px solid var(--color-gray);
-  margin-block: 40px;
+  border-bottom: 1px solid var(--color-gray);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .horizontal-table .cell {
@@ -594,8 +607,9 @@ p {
 .two-dimensional-table {
   width: 100%;
   border-collapse: collapse;
-  border-block: 1px solid var(--color-gray);
-  margin-block: 40px;
+  border-bottom: 1px solid var(--color-gray);
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .two-dimensional-table .table-heading {
@@ -651,7 +665,8 @@ p {
 .highlight {
   background-color: var(--color-bg-light-gray);
   padding: 18px 20px;
-  margin-block: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .highlight .title {
@@ -717,7 +732,8 @@ p {
   background-color: #999999;
   color: var(--color-white);
   font-size: 12px;
-  padding-inline: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
   transform: translateY(3px);
 }
 
@@ -937,7 +953,8 @@ p {
 }
 
 .points .point .point-content {
-  margin-block: 14px 18px;
+  margin-top: 14px;
+  margin-bottom: 18px;
 }
 
 .points .point .point-image {
@@ -977,8 +994,8 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1;
   width: 34px;
+  height: 34px;
   border-radius: 4px;
 }
 
@@ -1069,8 +1086,7 @@ p {
 
 /* past speakers */
 .past-speakers {
-  padding-inline: 15px;
-  padding-block: 27px;
+  padding: 27px 15px;
 }
 
 .past-speakers .heading {
@@ -1353,7 +1369,7 @@ ul.list li::before {
   display: inline-block;
   content: '';
   width: 6px;
-  aspect-ratio: 1;
+  height: 6px;
   border-radius: 50%;
   translate: -12px -3px;
   background-color: var(--color-blue);
@@ -1420,7 +1436,8 @@ ul.list ul ul li::before {
   align-items: center;
   justify-content: center;
   border-left: 1px solid var(--color-line-gray);
-  padding-inline: 13px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .tabs > .tab-item-container > .tab-item:last-of-type > * {
@@ -1484,22 +1501,23 @@ ul.list ul ul li::before {
   margin-top: 28px;
 }
 
-.footer .container-1 .group-1 .accordion>.item+.item {
+.footer .container-1 .group-1 .accordion>.accordion-item+.accordion-item {
   margin-top: 10px;
 }
 
-.footer .container-1 .group-1 .accordion .item {
-  padding-inline: 20px;
+.footer .container-1 .group-1 .accordion .accordion-item {
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: var(--color-white);
   border-radius: 4px;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active):hover {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active):hover {
   cursor: pointer;
   background-color: #ffffffb8;
 }
 
-.footer .container-1 .group-1 .accordion .item .title {
+.footer .container-1 .group-1 .accordion .accordion-item .title {
   margin: 0;
   font-weight: 700;
   font-size: 16px;
@@ -1507,34 +1525,34 @@ ul.list ul ul li::before {
   padding: 27px 0 0 0;
 }
 
-.footer .container-1 .group-1 .accordion .item.active .title {
+.footer .container-1 .group-1 .accordion .accordion-item.active .title {
   color: var(--color-text);
   cursor: default;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active) .title {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 17px 0 16px;
 }
 
-.footer .container-1 .group-1 .accordion .item:not(.active) .title::after {
+.footer .container-1 .group-1 .accordion .accordion-item:not(.active) .title::after {
   content: '';
   display: inline-block;
   background-image: url(/images/icon-caret-solid-blue.svg);
   width: 16px;
-  aspect-ratio: 1;
+  height: 16px;
   border-radius: 50%;
 }
 
-.footer .container-1 .group-1 .accordion .item .content {
+.footer .container-1 .group-1 .accordion .accordion-item .content {
   margin-top: 26px;
   display: none;
   padding-bottom: 16px;
 }
 
-.footer .container-1 .group-1 .accordion .item.active .content {
+.footer .container-1 .group-1 .accordion .accordion-item.active .content {
   display: block;
 }
 
@@ -1599,7 +1617,8 @@ ul.list ul ul li::before {
 
 .footer .container-1 .group-2 {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-block: 2px 28px;
+  padding-top: 2px;
+  padding-bottom: 28px;
   text-align: center;
 }
 
@@ -1613,7 +1632,8 @@ ul.list ul ul li::before {
 
 .footer .container-1 .group-2 p a {
   font-size: 14px;
-  padding-inline: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 24.5px;
   word-break: keep-all;
 }
@@ -1624,7 +1644,8 @@ ul.list ul ul li::before {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-block: 40px 36px;
+  padding-top: 40px;
+  padding-bottom: 36px;
 }
 
 .footer .container-2 .group-1 {
@@ -1648,7 +1669,8 @@ ul.list ul ul li::before {
   justify-content: center;
   background: var(--color-gr-main);
   color: var(--color-white);
-  padding-block: 32px 11px;
+  padding-top: 32px;
+  padding-bottom: 11px;
 }
 
 .footer .container-3 p {
