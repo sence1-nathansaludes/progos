@@ -240,12 +240,17 @@ p {
   width: 180px;
 }
 
+
 /* section */
+
+.section:first-of-type {
+  padding-top: 0;
+}
+
 .section {
   max-width: 1040px;
-  margin-inline: auto;
-  margin-bottom: 80px;
-  padding-inline: 15px;
+  padding: 30px 15px;
+  margin: 0 auto;
 }
 
 /* alert */
@@ -403,10 +408,15 @@ p {
   display: flex;
   font-size: 24px;
   line-height: 1.5;
-  margin-block: 58px 17px;
+  margin-block: 0;
   padding-left: 14px;
   border-left: 4px solid var(--color-blue);
 }
+
+.my-17 {
+  margin: 17px 0;
+}
+
 
 /* heading 3 */
 .heading-3 {
@@ -497,7 +507,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .card>* {
@@ -568,12 +578,17 @@ p {
   display: inline-block;
 }
 
+/* margin (Y axis) for tables */
+
+.my-30 {
+  margin: 30px 0;
+}
+
 /* horizontal table */
 .horizontal-table {
   width: 100%;
   border-collapse: collapse;
   border-block: 1px solid var(--color-gray);
-  margin-block: 40px;
 }
 
 .horizontal-table .cell {
@@ -595,7 +610,6 @@ p {
   width: 100%;
   border-collapse: collapse;
   border-block: 1px solid var(--color-gray);
-  margin-block: 40px;
 }
 
 .two-dimensional-table .table-heading {
@@ -684,9 +698,29 @@ p {
   color: var(--color-black);
 }
 
+/* field-row */
+
+.field-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 15px;
+  row-gap: 20px;
+}
+
+.field-row .field-block {
+  width: 45%;
+}
+
+.field-row .field-block .field-input{
+  width: 80%;
+}
+
+/* fieldset */
+
 .form-group fieldset {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   column-gap: 20px;
   row-gap: 20px;
   padding: 0;
@@ -698,8 +732,10 @@ p {
 .field-block {
   display: flex;
   flex-direction: column;
-  min-width: 0;
+
 }
+
+
 
 /* form - field label */
 .field-block .field-label {
@@ -1696,9 +1732,4 @@ ul.list ul ul li::before {
 
 .link-button[data-icon="arrow-down"]::after {
   content: url(/images/icon-arrow-down.svg);
-}
-
-/* form - form group */
-.form-group[data-cols="2"] fieldset {
-  grid-template-columns: 1fr 1fr;
 }

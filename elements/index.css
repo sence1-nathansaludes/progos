@@ -6,24 +6,45 @@
 }
 
 /* columns */
+
 #sample-container\:columns .row {
-  margin-top: 27px;
-  display: grid;
+  display: flex;
   column-gap: 15px;
-  row-gap: 15px;
-}
-
-#sample-container\:columns .cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#sample-container\:columns .cols-3 {
-  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 17px;
 }
 
 #sample-container\:columns .cols-4 {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-bottom: 17px;
+}
+
+#sample-container\:columns .cols-4 .card {
+  width: 47%;
+}
+
+/* narrow container rows and columns */
+
+#sample-sm-container\:columns .row {
+  display: flex;
+  column-gap: 15px;
+  margin-bottom: 17px;
+}
+
+#sample-sm-container\:columns .cols-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-bottom: 17px;
+}
+
+#sample-sm-container\:columns .cols-4 .card {
+  width: 47%;
 }
 
 /* button stack */
@@ -88,9 +109,20 @@
 
 /* banner */
 #sample-container\:3-banner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   gap: 15px;
+}
+
+.banner-row {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.single-banner-row {
+  width: 48%;
 }
 
 /* map */
