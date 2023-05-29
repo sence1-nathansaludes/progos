@@ -94,7 +94,6 @@ screens as wide as 768 pixels and above.
   /* heading 2 */
   .heading-2 {
     font-size: 28px;
-    /* margin-block: 72px 26px; */
     padding-left: 20px;
   }
 
@@ -143,39 +142,26 @@ screens as wide as 768 pixels and above.
     object-fit: cover;
   }
 
-  .card.to-right,
-  .card.to-left {
-    display: grid;
-    grid-template-columns: auto auto;
+  .card.to-right {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
     column-gap: 40px;
+  }
+  
+  
+  .card.to-left {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    max-width: 100%;
   }
 
   .card.to-right>.image,
   .card.to-left>.image {
-    width: 100%;
+    width: 50%;
     min-height: 100%;
     object-fit: cover;
-  }
-
-  .card.to-right>p,
-  .card.to-left>p {
-    margin: 0;
-  }
-
-  .card.to-right>.image {
-    order: 1;
-  }
-
-  .card.to-right>p {
-    order: 2;
-  }
-
-  .card.to-left>.image {
-    order: 2;
-  }
-
-  .card.to-left>p {
-    order: 1;
   }
 
   /* one column table */
@@ -231,6 +217,16 @@ screens as wide as 768 pixels and above.
     font-weight: 700;
     font-size: 14px;
   }
+
+  /* field-row  */
+
+  .field-row {
+    flex-direction: row;
+  }
+
+  .field-row .field-block {
+    width: 50%;
+  } 
 
   /* form - radio field */
   .radio-option .radio-input {
